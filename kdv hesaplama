@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+
+        //değerleri tanımla
+        double tutar, kdvOran, kdvTutar, kdvliTutar;
+
+        //kullanıcıdan girdi al
+        Scanner input = new Scanner(System.in);
+        System.out.println("Ürün fiyatını giriniz: ");
+        tutar = input.nextDouble();
+
+        //kdv oranini hesapla
+        kdvOran = (tutar > 1000) ? 0.08 : 0.18;
+        kdvTutar = tutar * kdvOran;
+        kdvliTutar = tutar + kdvTutar;
+
+        //kdv tutarını ekrana getir
+        System.out.println(kdvliTutar);
+
+
+    }
+}
