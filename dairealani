@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        double r, alan, cevre, pi = 3.14, dilimAlan, a;
+
+        //kullanicidan input al
+        Scanner input = new Scanner(System.in);
+        System.out.print("Yari cap giriniz: ");
+        r = input.nextDouble();
+        System.out.print("Merkez aci gir: ");
+        a = input.nextDouble();
+
+        //cevre ve alan hesaplama
+        alan = pi * r * r;
+        cevre = 2 * pi * r;
+        dilimAlan = (pi * (r*r) * a)/360;
+
+        System.out.println(dilimAlan);
+    }
+}
