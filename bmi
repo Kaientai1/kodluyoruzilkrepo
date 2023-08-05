@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        double kilo, boy, vki;
+
+        //kilo, boy detayını al
+        Scanner input = new Scanner(System.in);
+        System.out.print("Kilonu gir: ");
+        kilo = input.nextDouble();
+        System.out.print("Boyunu gir: ");
+        boy = input.nextDouble();
+
+        vki = kilo / (boy*boy);
+        System.out.print(vki);
+    }
+}
