@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        //degerleri tanimla
+        int a, b ,c, ucgenCevre, u;
+        double hipotenus, alan;
+
+        //kullanicidan girdi al
+        Scanner input = new Scanner(System.in);
+        System.out.println("A kenarını gir: ");
+        a = input.nextInt();
+        System.out.println("B kenarını gir: ");
+        b = input.nextInt();
+        System.out.println("C kenarını gir: ");
+        c = input.nextInt();
+
+        //cevreyi, alani, hipotenusu bul
+        hipotenus = Math.sqrt((a*a)+(b*b));
+        u = (a+b+c)/2;
+        ucgenCevre = 2*u;
+        alan = Math.sqrt(u * (u-a) * (u-b) * (u-c));
+
+        System.out.println("Ucgenin Cevresi: " + ucgenCevre);
+        System.out.println("Hipotenusu: " + hipotenus);
+        System.out.println("Ucgenin Alani: " + alan);
+
+    }
+}
