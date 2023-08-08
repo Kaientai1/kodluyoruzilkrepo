@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        double armut, elma, domates, muz, patlican, tutarArmut = 2.14, tutarElma = 3.67, tutarDomates = 1.11,tutarMuz = 0.95, tutarPatlican = 5.00, toplamTutar;
+
+        //meybe kilo detayını al
+        Scanner input = new Scanner(System.in);
+        System.out.print("Armut kaç kilo? : ");
+        armut = input.nextDouble();
+        System.out.print("Elma kaç kilo? : ");
+        elma = input.nextDouble();
+        System.out.print("Domates kaç kilo? : ");
+        domates = input.nextDouble();
+        System.out.print("Muz kaç kilo? : ");
+        muz = input.nextDouble();
+        System.out.print("Patlican kaç kilo? : ");
+        patlican = input.nextDouble();
+
+        System.out.print("Toplam tutar : ");
+        System.out.println((armut*tutarArmut)+(elma*tutarElma)+(domates+tutarDomates)+(muz*tutarMuz)+(patlican*tutarPatlican));
+
+    }
+}
